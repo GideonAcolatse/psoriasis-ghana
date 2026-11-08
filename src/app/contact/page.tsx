@@ -65,9 +65,12 @@ export default function ContactPage() {
             <div className="flex items-start gap-3.5">
               <MapPin className="w-5 h-5 text-brand-terracotta flex-shrink-0 mt-0.5" />
               <div>
-                <p className="font-bold text-white">Office Address</p>
+                <p className="font-bold text-white">Office & Postal Address</p>
                 <p className="text-xs text-emerald-200 mt-0.5">
                   Michel Camp Road, Tema, Greater Accra Region, Ghana
+                </p>
+                <p className="text-xs text-emerald-200">
+                  Postal: P. O. Box AS 955, Ashaiman
                 </p>
               </div>
             </div>

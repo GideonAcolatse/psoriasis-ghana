@@ -100,12 +100,15 @@ export default function Footer() {
         {/* Col 3: Contact & Headquarters */}
         <div className="space-y-3">
           <h4 className="text-sm font-semibold uppercase tracking-wider text-emerald-300">
-            Headquarters & Helpline
+            Headquarters & Secretariat
           </h4>
           <ul className="space-y-2.5 text-xs text-emerald-100/80">
             <li className="flex items-start gap-2.5">
               <MapPin className="w-4 h-4 text-brand-terracotta flex-shrink-0 mt-0.5" />
-              <span>Michel Camp Road, Tema, Greater Accra, Ghana</span>
+              <div>
+                <span>Michel Camp Road, Tema, Ghana</span>
+                <span className="block text-[11px] text-emerald-300/80">Postal: P. O. Box AS 955, Ashaiman</span>
+              </div>
             </li>
             <li className="flex items-center gap-2.5">
               <Phone className="w-4 h-4 text-brand-terracotta flex-shrink-0" />
@@ -122,14 +125,64 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* Col 4: International Affiliations */}
-        <div className="space-y-3">
-          <h4 className="text-sm font-semibold uppercase tracking-wider text-emerald-300">
-            Global Affiliations
-          </h4>
-          <p className="text-xs text-emerald-200/80 leading-relaxed">
-            Proudly affiliated with the International Federation of Psoriasis Associations (IFPA), GlobalSkin, PsorAfrica, Ghana Health Service (GHS), GhNCDA, Università degli Studi di Milano, and mySkin & Laser Clinic.
-          </p>
+        {/* Col 4: International Affiliations & Social Handles */}
+        <div className="space-y-4">
+          <div className="space-y-2">
+            <h4 className="text-sm font-semibold uppercase tracking-wider text-emerald-300">
+              Global Affiliations
+            </h4>
+            <p className="text-xs text-emerald-200/80 leading-relaxed">
+              Proudly affiliated with IFPA, GlobalSkin, PsorAfrica, Ghana Health Service (GHS), GhNCDA, Università degli Studi di Milano, and mySkin & Laser Clinic.
+            </p>
+          </div>
+
+          <div className="pt-2 border-t border-emerald-900/60 space-y-1.5">
+            <span className="text-[11px] font-bold uppercase tracking-wider text-emerald-300 block">
+              Follow PAG Community
+            </span>
+            <div className="flex flex-wrap gap-2 text-[11px]">
+              <a
+                href="https://x.com/psoriasis_gh"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-2.5 py-1 rounded-lg bg-emerald-900/80 text-emerald-200 hover:text-white hover:bg-emerald-800 transition-colors"
+              >
+                X: @psoriasis_gh
+              </a>
+              <a
+                href="https://instagram.com/psoriasis_gh"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-2.5 py-1 rounded-lg bg-emerald-900/80 text-emerald-200 hover:text-white hover:bg-emerald-800 transition-colors"
+              >
+                IG: @psoriasis_gh
+              </a>
+              <a
+                href="https://facebook.com/PsoriasisAssociationOfGhana"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-2.5 py-1 rounded-lg bg-emerald-900/80 text-emerald-200 hover:text-white hover:bg-emerald-800 transition-colors"
+              >
+                Facebook
+              </a>
+              <a
+                href="https://linkedin.com/company/psoriasis-association-of-ghana"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-2.5 py-1 rounded-lg bg-emerald-900/80 text-emerald-200 hover:text-white hover:bg-emerald-800 transition-colors"
+              >
+                LinkedIn
+              </a>
+              <a
+                href="https://youtube.com/@psoriasisassociationofghana"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-2.5 py-1 rounded-lg bg-emerald-900/80 text-emerald-200 hover:text-white hover:bg-emerald-800 transition-colors"
+              >
+                YouTube
+              </a>
+            </div>
+          </div>
         </div>
       </div>
 
