@@ -192,7 +192,7 @@ export default function DonatePage() {
                   >
                     <Smartphone className="w-5 h-5 text-brand-terracotta" />
                     <div>
-                      <div className="text-xs font-bold text-brand-charcoal">Mobile Money</div>
+                      <div className="text-xs font-bold text-brand-charcoal">Instant Transfer</div>
                       <div className="text-[10px] text-brand-muted">MTN • Telecel • AT</div>
                     </div>
                   </button>
@@ -248,7 +248,7 @@ export default function DonatePage() {
 
                   <div className="space-y-1">
                     <label className="text-xs font-bold uppercase text-brand-charcoal">
-                      Mobile Money Number *
+                      Contact Phone *
                     </label>
                     <input
                       type="tel"
@@ -334,7 +334,7 @@ export default function DonatePage() {
               <p><strong>Account Name:</strong> Psoriasis Association of Ghana</p>
               <p><strong>Bank:</strong> Ecobank Ghana / GCB Bank</p>
               <p><strong>Branch:</strong> Tema Main Branch</p>
-              <p><strong>Direct MoMo Merchant:</strong> +233 (0)24 517 9569</p>
+              <p><strong>Official Secretariat Line:</strong> +233 (0)24 517 9569</p>
             </div>
           </div>
         </div>

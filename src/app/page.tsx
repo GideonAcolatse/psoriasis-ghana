@@ -51,7 +51,7 @@ export default function HomePage() {
                   className="touch-press w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-full bg-brand-terracotta hover:bg-brand-terracotta-dark text-white font-bold text-base shadow-md transition-all"
                 >
                   <Heart className="w-5 h-5 fill-white" />
-                  <span>Donate via Mobile Money / Card</span>
+                  <span>Donate Now</span>
                 </Link>
 
                 <a
@@ -443,7 +443,7 @@ export default function HomePage() {
               className="touch-press w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-brand-terracotta hover:bg-brand-terracotta-dark text-white font-bold text-base shadow-lg transition-all"
             >
               <Heart className="w-5 h-5 fill-white" />
-              <span>Donate via Mobile Money or Card</span>
+              <span>Donate Today</span>
             </Link>
 
             <Link

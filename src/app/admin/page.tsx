@@ -59,7 +59,7 @@ export default function AdminDashboardPage() {
             Akwaaba, Miss Ruth Adjoa Abeka
           </h1>
           <p className="text-xs sm:text-sm text-emerald-200/80 leading-relaxed">
-            Manage your community clinical outreaches, publish health education articles, and monitor live MoMo donations across Ghana.
+            Manage your community clinical outreaches, publish health education articles, and monitor live donor contributions across Ghana.
           </p>
         </div>
 
@@ -137,7 +137,7 @@ export default function AdminDashboardPage() {
             GHS {totalDonations.toFixed(2)}
           </div>
           <p className="text-[11px] font-semibold text-emerald-700 flex items-center gap-1">
-            <span>Paystack MoMo & Cards</span>
+            <span>Paystack Online Gateway</span>
           </p>
         </div>
 
@@ -253,7 +253,7 @@ export default function AdminDashboardPage() {
               <h2 className="text-base font-bold text-brand-charcoal font-heading">
                 Recent Paystack Giving
               </h2>
-              <p className="text-xs text-slate-400">Mobile Money and Card transactions</p>
+              <p className="text-xs text-slate-400">Digital and Card contributions</p>
             </div>
             <Link
               href="/admin/donations"

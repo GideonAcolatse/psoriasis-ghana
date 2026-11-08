@@ -155,7 +155,7 @@ export default function Header() {
                 className="w-full flex items-center justify-center gap-2 py-3 rounded-full bg-brand-terracotta text-white font-semibold shadow-sm"
               >
                 <Heart className="w-4 h-4 fill-white" />
-                <span>Donate via Mobile Money / Card</span>
+                <span>Donate Now</span>
               </Link>
             </div>
           </div>

@@ -24,7 +24,7 @@ export default function AdminDonationsPage() {
 
     const matchesChannel =
       channelFilter === "all" ||
-      (channelFilter === "momo" && d.channel.includes("Money") || d.channel.includes("Cash")) ||
+      (channelFilter === "momo" && (d.channel.includes("Transfer") || d.channel.includes("Cash"))) ||
       (channelFilter === "card" && d.channel === "Card");
 
     return matchesSearch && matchesChannel;
@@ -40,10 +40,10 @@ export default function AdminDonationsPage() {
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <div>
           <h1 className="text-2xl sm:text-3xl font-extrabold text-brand-charcoal font-heading">
-            Donation & Mobile Money Ledger
+            Donation & Financial Ledger
           </h1>
           <p className="text-xs sm:text-sm text-slate-500">
-            Real-time transaction audit trail processed through Paystack Ghana (MTN MoMo, Telecel Cash, AT, & Cards).
+            Real-time transaction audit trail processed through Paystack Ghana.
           </p>
         </div>
 
@@ -79,7 +79,7 @@ export default function AdminDonationsPage() {
             className="text-xs border border-slate-200 rounded-lg px-2.5 py-1.5 bg-white text-slate-600 focus:outline-none"
           >
             <option value="all">All Payment Rails</option>
-            <option value="momo">Mobile Money (MTN/Telecel/AT)</option>
+            <option value="momo">Direct Electronic Transfer</option>
             <option value="card">Cards (Visa/Mastercard)</option>
           </select>
         </div>

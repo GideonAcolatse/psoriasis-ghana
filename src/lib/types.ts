@@ -52,7 +52,7 @@ export interface DonationRecord {
   donorEmail: string;
   amount: number;
   currency: string;
-  channel: "MTN Mobile Money" | "Telecel Cash" | "AT Money" | "Card";
+  channel: "MTN Transfer" | "Telecel Cash" | "AT Cash" | "Card" | string;
   reference: string;
   date: string;
   status: "success" | "pending" | "failed";

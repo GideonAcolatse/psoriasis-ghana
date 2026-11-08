@@ -24,7 +24,7 @@ export async function POST(req: Request) {
       donorEmail: donorEmail || "donor@example.com",
       amount: Number(amount),
       currency: currency || "GHS",
-      channel: channel || "MTN Mobile Money",
+      channel: channel || "Direct Transfer",
       status: status || "success",
       date: new Date().toISOString().split("T")[0],
     });
