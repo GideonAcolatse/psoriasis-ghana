@@ -24,14 +24,16 @@ export interface PetitionSignature {
 }
 
 export function isDatabaseConfigured(): boolean {
-  return Boolean(process.env.DATABASE_URL && process.env.DATABASE_URL.startsWith("postgres"));
+  const url = (process.env.DATABASE_URL || "").trim().replace(/^["']|["']$/g, "");
+  return Boolean(url && (url.startsWith("postgres://") || url.startsWith("postgresql://")));
 }
 
 export function getSql() {
   if (!isDatabaseConfigured()) {
     return null;
   }
-  return neon(process.env.DATABASE_URL!);
+  const url = process.env.DATABASE_URL!.trim().replace(/^["']|["']$/g, "");
+  return neon(url);
 }
 
 /**
