@@ -1,6 +1,8 @@
 import { NextResponse } from "next/server";
 import { getDonations, recordDonation } from "@/lib/db";
 
+export const dynamic = "force-dynamic";
+
 export async function GET() {
   const donations = await getDonations();
   return NextResponse.json({ success: true, donations });

@@ -1,6 +1,8 @@
 import { NextResponse } from "next/server";
 import { getMetrics, updateMetric } from "@/lib/db";
 
+export const dynamic = "force-dynamic";
+
 export async function GET() {
   const metrics = await getMetrics();
   return NextResponse.json({ success: true, metrics });
