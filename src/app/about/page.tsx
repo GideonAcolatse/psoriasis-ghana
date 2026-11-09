@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import PartnersShowcase from "@/components/PartnersShowcase";
 import {
   ShieldCheck,
   Target,
@@ -175,14 +176,7 @@ export default function AboutPage() {
           </p>
         </div>
 
-        <div className="relative w-full max-w-4xl h-40 sm:h-52 mx-auto bg-white rounded-2xl border border-brand-border p-4 shadow-sm">
-          <Image
-            src="/images/partners-grid.png"
-            alt="PAG Official Partners"
-            fill
-            className="object-contain"
-          />
-        </div>
+        <PartnersShowcase />
 
         <div className="pt-4 flex justify-center">
           <Link

@@ -20,6 +20,7 @@ import {
   ExternalLink,
 } from "lucide-react";
 import { initialMetrics, initialPosts, initialOutreaches } from "@/lib/data";
+import PartnersShowcase from "@/components/PartnersShowcase";
 
 export default function HomePage() {
   return (
@@ -402,26 +403,7 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="relative rounded-2xl overflow-hidden p-4 sm:p-6 bg-brand-linen border border-brand-border flex items-center justify-center">
-            <div className="relative w-full max-w-4xl h-36 sm:h-48">
-              <Image
-                src="/images/partners-grid.png"
-                alt="International and Local Partners: IFPA, GlobalSkin, PsorAfrica, Ghana Health Service, Università degli Studi di Milano, mySkin & Laser Clinic, GhNCDA, National Psoriasis Foundation, GAAPP"
-                fill
-                className="object-contain"
-              />
-            </div>
-          </div>
-
-          <div className="flex flex-wrap items-center justify-center gap-2 text-xs font-medium text-brand-muted">
-            <span className="px-3.5 py-1.5 rounded-full bg-emerald-50 text-brand-emerald font-semibold border border-emerald-100">IFPA (International Federation of Psoriasis Associations)</span>
-            <span className="px-3.5 py-1.5 rounded-full bg-emerald-50 text-brand-emerald font-semibold border border-emerald-100">GlobalSkin (International Alliance of Dermatology Patient Organizations)</span>
-            <span className="px-3.5 py-1.5 rounded-full bg-emerald-50 text-brand-emerald font-semibold border border-emerald-100">GAAPP (Global Allergy & Airways Patient Platform)</span>
-            <span className="px-3.5 py-1.5 rounded-full bg-emerald-50 text-brand-emerald font-semibold border border-emerald-100">GhNCDA (Ghana Non Communicable Disease Alliance)</span>
-            <span className="px-3.5 py-1.5 rounded-full bg-emerald-50 text-brand-emerald font-semibold border border-emerald-100">PsorAfrica</span>
-            <span className="px-3.5 py-1.5 rounded-full bg-emerald-50 text-brand-emerald font-semibold border border-emerald-100">Università degli Studi di Milano (GWAS Research Partner)</span>
-            <span className="px-3.5 py-1.5 rounded-full bg-emerald-50 text-brand-emerald font-semibold border border-emerald-100">Ghana Health Service</span>
-          </div>
+          <PartnersShowcase />
         </div>
       </section>
 
