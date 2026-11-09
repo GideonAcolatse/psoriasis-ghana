@@ -84,6 +84,27 @@ export const initialPosts: Post[] = [
 
 export const initialOutreaches: OutreachEvent[] = [
   {
+    id: "outreach-afienya",
+    title: "Afienya 2-Day Community Health Screening & Comorbidities Clinic",
+    slug: "afienya-community-health-screening",
+    location: "Afienya, Greater Accra Region",
+    date: "2024-11-03",
+    peopleScreened: 500,
+    summary: "Historic 2-day community health outreach in Afienya screening 500 attendees for psoriasis and psoriatic arthritis, providing free dermatologist consultations, diagnostic evaluations, and comorbidity education under our #StopTheDominoEffect initiative.",
+    category: "Community Screening",
+    coverImage: "/images/afienya/IMG-20261108-WA0025.jpg",
+    galleryImages: [
+      { url: "/images/afienya/IMG-20261108-WA0025.jpg", caption: "Medical team briefing community members under the main screening canopy in Afienya" },
+      { url: "/images/afienya/IMG-20261108-WA0038.jpg", caption: "Founder & Executive Director Miss Ruth Adjowa Abekah conducting clinical patient intake" },
+      { url: "/images/afienya/IMG-20261108-WA0048.jpg", caption: "Clinical officers reviewing diagnostic guides and dispensing prescription care" },
+      { url: "/images/afienya/IMG-20261108-WA0049.jpg", caption: "Community outreach coordination and health educational briefing in Afienya" },
+      { url: "/images/afienya/IMG-20261108-WA0051.jpg", caption: "One-on-one patient counseling with educational leaflets" },
+      { url: "/images/afienya/IMG-20261108-WA0050.jpg", caption: "Adolescent and youth counseling on living with psoriatic disease without stigma" },
+      { url: "/images/afienya/IMG-20261108-WA0032.jpg", caption: "World Psoriasis Day Campaign Banner: Psoriatic Disease and Comorbidities" },
+      { url: "/images/afienya/IMG-20261108-WA0045.jpg", caption: "Community engagement and awareness education in Afienya" },
+    ],
+  },
+  {
     id: "outreach-1",
     title: "World Psoriasis Day 2024: Psoriasis Disease & The Family",
     slug: "world-psoriasis-day-2024-tema",

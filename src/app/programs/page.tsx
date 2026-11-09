@@ -39,13 +39,13 @@ export default function ProgramsPage() {
         <div className="bg-white rounded-3xl p-8 sm:p-10 border border-brand-border shadow-sm grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           <div className="lg:col-span-5 relative h-64 sm:h-80 rounded-2xl overflow-hidden border border-brand-border">
             <Image
-              src="/images/gallery/screening-consultation.jpg"
-              alt="PAG Medical Outreach in Ghana"
+              src="/images/afienya/IMG-20261108-WA0025.jpg"
+              alt="PAG 2-Day Health Screening in Afienya (500 Screened)"
               fill
               className="object-cover"
             />
             <div className="absolute top-3 left-3 px-3 py-1 rounded-full bg-brand-emerald text-white text-xs font-bold">
-              500+ Screened per Outreach
+              500 Screened in Afienya
             </div>
           </div>
 
