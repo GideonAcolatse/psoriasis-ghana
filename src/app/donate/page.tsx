@@ -1,16 +1,10 @@
 "use client";
 
 import React, { useState } from "react";
-import Image from "next/image";
 import {
   Heart,
-  ShieldCheck,
   CheckCircle2,
-  CreditCard,
-  Smartphone,
   Lock,
-  ArrowRight,
-  Sparkles,
 } from "lucide-react";
 
 export default function DonatePage() {
@@ -18,10 +12,10 @@ export default function DonatePage() {
   const [selectedAmount, setSelectedAmount] = useState<number>(100);
   const [customAmount, setCustomAmount] = useState<string>("");
   const [frequency, setFrequency] = useState<"one-off" | "monthly">("one-off");
-  const [channel, setChannel] = useState<"momo" | "card">("momo");
   const [donorName, setDonorName] = useState("");
   const [donorEmail, setDonorEmail] = useState("");
   const [donorPhone, setDonorPhone] = useState("");
+  const [transactionRef, setTransactionRef] = useState("");
   const [isProcessing, setIsProcessing] = useState(false);
   const [isCompleted, setIsCompleted] = useState(false);
 
@@ -31,15 +25,35 @@ export default function DonatePage() {
   const presets = currency === "GHS" ? ghsPresets : usdPresets;
   const currentAmount = customAmount ? parseFloat(customAmount) || 0 : selectedAmount;
 
-  const handleDonate = (e: React.FormEvent) => {
+  const handleDonate = async (e: React.FormEvent) => {
     e.preventDefault();
     if (currentAmount <= 0) return;
     setIsProcessing(true);
-    // Simulate seamless Paystack MoMo / Card checkout processing
+    const ref = `PAG-GH-${Math.floor(100000 + Math.random() * 900000)}`;
+    setTransactionRef(ref);
+
+    try {
+      await fetch("/api/donations", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          reference: ref,
+          donorName,
+          donorEmail,
+          amount: currentAmount,
+          currency,
+          channel: "Paystack",
+          status: "success",
+        }),
+      });
+    } catch {
+      // offline / mock fallback
+    }
+
     setTimeout(() => {
       setIsProcessing(false);
       setIsCompleted(true);
-    }, 1500);
+    }, 1200);
   };
 
   return (
@@ -74,7 +88,7 @@ export default function DonatePage() {
                 Your donation of <strong className="text-brand-terracotta">{currency} {currentAmount.toFixed(2)}</strong> has been successfully received. A digital receipt has been dispatched to <strong>{donorEmail || "your email"}</strong>.
               </p>
               <div className="p-4 rounded-xl bg-brand-linen border border-brand-border text-xs text-brand-muted">
-                Transaction Reference: <span className="font-mono font-bold text-brand-emerald">PAG-GH-{Math.floor(100000 + Math.random() * 900000)}</span>
+                Transaction Reference: <span className="font-mono font-bold text-brand-emerald">{transactionRef || `PAG-GH-742918`}</span>
               </div>
               <button
                 onClick={() => setIsCompleted(false)}
@@ -173,46 +187,6 @@ export default function DonatePage() {
                   }}
                   className="w-full px-4 py-3 rounded-xl border border-brand-border focus:outline-none focus:ring-2 focus:ring-brand-emerald text-base font-bold text-brand-charcoal"
                 />
-              </div>
-
-              {/* Payment Rail Selector */}
-              <div className="space-y-2">
-                <label className="text-xs font-bold uppercase text-brand-charcoal">
-                  Payment Method:
-                </label>
-                <div className="grid grid-cols-2 gap-3">
-                  <button
-                    type="button"
-                    onClick={() => setChannel("momo")}
-                    className={`p-3.5 rounded-2xl border text-left flex items-center gap-3 transition-all ${
-                      channel === "momo"
-                        ? "bg-emerald-50 border-brand-emerald text-brand-emerald ring-2 ring-brand-emerald/20 font-bold"
-                        : "bg-white border-brand-border text-brand-muted font-medium hover:border-emerald-200"
-                    }`}
-                  >
-                    <Smartphone className="w-5 h-5 text-brand-terracotta" />
-                    <div>
-                      <div className="text-xs font-bold text-brand-charcoal">Instant Transfer</div>
-                      <div className="text-[10px] text-brand-muted">MTN • Telecel • AT</div>
-                    </div>
-                  </button>
-
-                  <button
-                    type="button"
-                    onClick={() => setChannel("card")}
-                    className={`p-3.5 rounded-2xl border text-left flex items-center gap-3 transition-all ${
-                      channel === "card"
-                        ? "bg-emerald-50 border-brand-emerald text-brand-emerald ring-2 ring-brand-emerald/20 font-bold"
-                        : "bg-white border-brand-border text-brand-muted font-medium hover:border-emerald-200"
-                    }`}
-                  >
-                    <CreditCard className="w-5 h-5 text-brand-terracotta" />
-                    <div>
-                      <div className="text-xs font-bold text-brand-charcoal">Debit / Credit Card</div>
-                      <div className="text-[10px] text-brand-muted">Visa • Mastercard</div>
-                    </div>
-                  </button>
-                </div>
               </div>
 
               {/* Donor Contact Fields */}
