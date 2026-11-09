@@ -23,8 +23,9 @@ export const metadata: Metadata = {
   keywords: [
     "Psoriasis Association of Ghana",
     "PAG Ghana",
-    "Ruth Adjoa Abeka",
+    "Ruth Adjowa Abekah",
     "Psoriasis Ghana",
+    "Psoriatic Arthritis Ghana",
     "Dermatology Ghana",
     "NHIS Psoriasis",
     "GWAS Psoriasis Africa",

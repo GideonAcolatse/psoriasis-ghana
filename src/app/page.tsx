@@ -41,7 +41,7 @@ export default function HomePage() {
               </h1>
 
               <p className="text-base sm:text-lg text-brand-charcoal/85 leading-relaxed max-w-2xl mx-auto lg:mx-0">
-                The <strong className="text-brand-emerald font-semibold">Psoriasis Association of Ghana (PAG)</strong> is dedicated to empowering patients through education, medical outreaches, health insurance advocacy, and landmark genetic research, eliminating stigma one life at a time across Ghana.
+                The <strong className="text-brand-emerald font-semibold">Psoriasis Association of Ghana (PAG)</strong> is dedicated to creating awareness and empowering individuals living with <strong className="text-brand-emerald font-semibold">Psoriasis and Psoriatic Arthritis</strong> through patient education, clinical screening outreaches, NHIS advocacy, and landmark genetic research, eliminating stigma one life at a time across Ghana.
               </p>
 
               {/* Action Buttons */}
@@ -68,10 +68,10 @@ export default function HomePage() {
               {/* Founder quote pill */}
               <div className="pt-2 flex items-center justify-center lg:justify-start gap-3 text-xs text-brand-muted">
                 <div className="w-8 h-8 rounded-full overflow-hidden relative flex-shrink-0 border border-emerald-800/20">
-                  <Image src="/images/ruth-abeka.jpg" alt="Miss Ruth Adjoa Abeka" fill className="object-cover" />
+                  <Image src="/images/ruth-abeka.jpg" alt="Miss Ruth Adjowa Abekah" fill className="object-cover" />
                 </div>
                 <span>
-                  Led by <strong className="text-brand-emerald">Miss Ruth Adjoa Abeka</strong>, Founder & Executive Director (Tema, Ghana)
+                  Led by <strong className="text-brand-emerald">Miss Ruth Adjowa Abekah</strong>, Founder & Executive Director (Tema, Ghana)
                 </span>
               </div>
             </div>
@@ -414,13 +414,13 @@ export default function HomePage() {
           </div>
 
           <div className="flex flex-wrap items-center justify-center gap-2 text-xs font-medium text-brand-muted">
-            <span className="px-3 py-1 rounded-full bg-emerald-50 text-brand-emerald">IFPA Member</span>
-            <span className="px-3 py-1 rounded-full bg-emerald-50 text-brand-emerald">GlobalSkin Affiliate</span>
-            <span className="px-3 py-1 rounded-full bg-emerald-50 text-brand-emerald">PsorAfrica Region</span>
-            <span className="px-3 py-1 rounded-full bg-emerald-50 text-brand-emerald">Ghana Health Service</span>
-            <span className="px-3 py-1 rounded-full bg-emerald-50 text-brand-emerald">Università degli Studi di Milano</span>
-            <span className="px-3 py-1 rounded-full bg-emerald-50 text-brand-emerald">GhNCDA</span>
-            <span className="px-3 py-1 rounded-full bg-emerald-50 text-brand-emerald">mySkin & Laser Clinic</span>
+            <span className="px-3.5 py-1.5 rounded-full bg-emerald-50 text-brand-emerald font-semibold border border-emerald-100">IFPA (International Federation of Psoriasis Associations)</span>
+            <span className="px-3.5 py-1.5 rounded-full bg-emerald-50 text-brand-emerald font-semibold border border-emerald-100">GlobalSkin (International Alliance of Dermatology Patient Organizations)</span>
+            <span className="px-3.5 py-1.5 rounded-full bg-emerald-50 text-brand-emerald font-semibold border border-emerald-100">GAAPP (Global Allergy & Airways Patient Platform)</span>
+            <span className="px-3.5 py-1.5 rounded-full bg-emerald-50 text-brand-emerald font-semibold border border-emerald-100">GhNCDA (Ghana Non Communicable Disease Alliance)</span>
+            <span className="px-3.5 py-1.5 rounded-full bg-emerald-50 text-brand-emerald font-semibold border border-emerald-100">PsorAfrica</span>
+            <span className="px-3.5 py-1.5 rounded-full bg-emerald-50 text-brand-emerald font-semibold border border-emerald-100">Università degli Studi di Milano (GWAS Research Partner)</span>
+            <span className="px-3.5 py-1.5 rounded-full bg-emerald-50 text-brand-emerald font-semibold border border-emerald-100">Ghana Health Service</span>
           </div>
         </div>
       </section>

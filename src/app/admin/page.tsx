@@ -56,7 +56,7 @@ export default function AdminDashboardPage() {
             <span>PAG Executive Management Desk</span>
           </div>
           <h1 className="text-2xl sm:text-3xl font-extrabold text-white font-heading">
-            Akwaaba, Miss Ruth Adjoa Abeka
+            Akwaaba, Miss Ruth Adjowa Abekah
           </h1>
           <p className="text-xs sm:text-sm text-emerald-200/80 leading-relaxed">
             Manage your community clinical outreaches, publish health education articles, and monitor live donor contributions across Ghana.

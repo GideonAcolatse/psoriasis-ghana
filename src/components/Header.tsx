@@ -15,15 +15,17 @@ export default function Header() {
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-1">
           <div className="flex items-center gap-2">
             <span className="inline-block w-2 h-2 rounded-full bg-brand-terracotta animate-pulse" />
-            <span className="font-medium text-emerald-100">Living with Psoriasis in Ghana? You are not alone.</span>
+            <span className="font-medium text-emerald-100">Living with Psoriasis or Psoriatic Arthritis in Ghana? You are not alone.</span>
           </div>
           <div className="flex items-center gap-4 text-emerald-200">
             <a
-              href="tel:+233245179569"
+              href="https://wa.me/233245179569?text=Hello%20PAG,%20I%20am%20seeking%20support"
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center gap-1.5 hover:text-white transition-colors"
             >
               <Phone className="w-3.5 h-3.5 text-brand-terracotta" />
-              <span>Helpline: +233 (0)24 517 9569</span>
+              <span>WhatsApp: +233 (0)24 517 9569 / +233 (0)59 288 4233</span>
             </a>
             <span className="hidden md:inline text-emerald-600">•</span>
             <span className="hidden md:inline">Michel Camp Road, Tema</span>

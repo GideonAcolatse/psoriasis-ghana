@@ -46,7 +46,7 @@ export default function AboutPage() {
             Mission Statement
           </h2>
           <p className="text-base text-brand-charcoal/85 leading-relaxed">
-            To improve the lives of individuals affected by psoriasis in Ghana through advocacy, education, support, and collaboration with healthcare providers and policymakers to ensure access to quality care.
+            To improve the lives of individuals affected by Psoriasis and Psoriatic Arthritis in Ghana through advocacy, education, scientific research, support, and collaboration with healthcare providers and policymakers to ensure access to quality care and reduce stigma.
           </p>
         </div>
 
@@ -62,19 +62,19 @@ export default function AboutPage() {
             Vision Statement
           </h2>
           <p className="text-base text-brand-charcoal/85 leading-relaxed">
-            A future where all people living with psoriasis in Ghana have access to appropriate care, are supported by their communities, and are free from stigma and discrimination.
+            A future where all people living with Psoriasis and Psoriatic Arthritis in Ghana have access to appropriate care, are supported by their communities, and are free from stigma and discrimination.
           </p>
         </div>
       </div>
 
-      {/* 3. Founder Spotlight: Miss Ruth Adjoa Abeka */}
+      {/* 3. Founder Spotlight: Miss Ruth Adjowa Abekah */}
       <div className="bg-gradient-to-br from-emerald-900 to-emerald-950 text-white rounded-3xl p-8 sm:p-12 shadow-xl border border-emerald-800">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           <div className="lg:col-span-4 flex justify-center">
             <div className="relative w-64 h-72 sm:w-72 sm:h-80 rounded-2xl overflow-hidden border-4 border-white/20 shadow-2xl">
               <Image
                 src="/images/ruth-abeka.jpg"
-                alt="Miss Ruth Adjoa Abeka, Founder and Executive Director of PAG"
+                alt="Miss Ruth Adjowa Abekah, Founder and Executive Director of PAG"
                 fill
                 className="object-cover"
               />
@@ -88,18 +88,18 @@ export default function AboutPage() {
             </div>
 
             <h2 className="text-2xl sm:text-4xl font-extrabold font-heading text-white">
-              Miss Ruth Adjoa Abeka
+              Miss Ruth Adjowa Abekah
             </h2>
             <p className="text-xs sm:text-sm font-semibold text-amber-300">
               Founder & Executive Director, Psoriasis Association of Ghana
             </p>
 
             <p className="text-sm sm:text-base text-emerald-100/90 leading-relaxed">
-              Miss Ruth Adjoa Abeka founded the Psoriasis Association of Ghana in June 2019 with a bold vision to eliminate stigma and dramatically improve the quality of life for psoriasis patients across Ghana.
+              Miss Ruth Adjowa Abekah founded the Psoriasis Association of Ghana in June 2019 with a bold vision to eliminate stigma, advance scientific research, and dramatically improve the quality of life for individuals living with psoriasis and psoriatic arthritis across Ghana.
             </p>
 
             <p className="text-sm sm:text-base text-emerald-100/90 leading-relaxed">
-              Under her relentless leadership, PAG has grown into a nationally recognized NGO with international affiliations including IFPA and GlobalSkin. She has spearheaded Africa&apos;s first psoriasis GWAS genetic study in partnership with the University of Milan and conducted landmark community outreaches reaching thousands across Ghana.
+              Under her relentless leadership, PAG has grown into a nationally recognized NGO with prominent international and local partnerships, including IFPA (International Federation of Psoriasis Associations), GlobalSkin (International Alliance of Dermatology Patient Organizations), GAAPP (Global Allergy & Airways Patient Platform), GhNCDA (Ghana Non Communicable Disease Alliance), and PsorAfrica. She has also spearheaded Africa&apos;s first psoriasis GWAS genetic study in partnership with the University of Milan and conducted landmark community outreaches reaching thousands across Ghana.
             </p>
 
             <div className="p-4 rounded-xl bg-black/30 border border-white/10 text-xs text-emerald-200/90 flex items-center gap-3">

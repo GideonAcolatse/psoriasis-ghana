@@ -105,7 +105,7 @@ const galleryData: GalleryPhoto[] = [
     event: "National Dermatology Forum",
     date: "June 2024",
     location: "Accra International Conference Center",
-    caption: "Miss Ruth Adjoa Abeka presenting PAG's 2019-2025 field data and the urgent economic justification for NHIS psoriasis coverage.",
+    caption: "Miss Ruth Adjowa Abekah presenting PAG's 2019-2025 field data and the urgent economic justification for NHIS psoriasis coverage.",
   },
 ];
 

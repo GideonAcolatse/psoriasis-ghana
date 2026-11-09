@@ -328,13 +328,14 @@ export default function DonatePage() {
 
           <div className="bg-white rounded-3xl p-6 border border-brand-border space-y-3">
             <h4 className="text-xs font-bold uppercase tracking-wider text-brand-charcoal">
-              Direct Bank Transfer Option:
+              Direct Corporate & NGO Bank Transfer:
             </h4>
             <div className="text-xs text-brand-muted space-y-1">
               <p><strong>Account Name:</strong> Psoriasis Association of Ghana</p>
-              <p><strong>Bank:</strong> Ecobank Ghana / GCB Bank</p>
+              <p><strong>Bank:</strong> Guaranty Trust Bank (GTBank Ghana)</p>
               <p><strong>Branch:</strong> Tema Main Branch</p>
-              <p><strong>Official Secretariat Line:</strong> +233 (0)24 517 9569</p>
+              <p><strong>WhatsApp Support:</strong> +233 (0)24 517 9569 / +233 (0)59 288 4233</p>
+              <p><strong>Official Email:</strong> psoriasisghana@gmail.com</p>
             </div>
           </div>
         </div>

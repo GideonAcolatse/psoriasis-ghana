@@ -112,11 +112,11 @@ export default function Footer() {
             </li>
             <li className="flex items-center gap-2.5">
               <Phone className="w-4 h-4 text-brand-terracotta flex-shrink-0" />
-              <span>+233 (0)24 517 9569 / +233 (0)24 691 4992</span>
+              <span>+233 (0)24 517 9569 / +233 (0)59 288 4233 (WhatsApp)</span>
             </li>
             <li className="flex items-center gap-2.5">
               <Mail className="w-4 h-4 text-brand-terracotta flex-shrink-0" />
-              <span>info@psoriasisgh.org / psoriasis.gh@gmail.com</span>
+              <span>psoriasisghana@gmail.com / info@psoriasisgh.org</span>
             </li>
             <li className="flex items-center gap-2.5">
               <Globe className="w-4 h-4 text-brand-terracotta flex-shrink-0" />
@@ -129,10 +129,10 @@ export default function Footer() {
         <div className="space-y-4">
           <div className="space-y-2">
             <h4 className="text-sm font-semibold uppercase tracking-wider text-emerald-300">
-              Global Affiliations
+              Global Coalition & Partners
             </h4>
             <p className="text-xs text-emerald-200/80 leading-relaxed">
-              Proudly affiliated with IFPA, GlobalSkin, PsorAfrica, Ghana Health Service (GHS), GhNCDA, Università degli Studi di Milano, and mySkin & Laser Clinic.
+              Proudly partnered with IFPA, GlobalSkin, GAAPP, GhNCDA, PsorAfrica, Ghana Health Service (GHS), and Università degli Studi di Milano (GWAS Research).
             </p>
           </div>
 

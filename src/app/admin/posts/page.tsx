@@ -29,7 +29,7 @@ export default function AdminPostsPage() {
   const [newPost, setNewPost] = useState({
     title: "",
     category: "Advocacy" as const,
-    author: "Miss Ruth Adjoa Abeka",
+    author: "Miss Ruth Adjowa Abekah",
     excerpt: "",
     content: "",
     coverImage: "/images/hero-outreach.jpg",
@@ -68,7 +68,7 @@ export default function AdminPostsPage() {
     setNewPost({
       title: "",
       category: "Advocacy",
-      author: "Miss Ruth Adjoa Abeka",
+      author: "Miss Ruth Adjowa Abekah",
       excerpt: "",
       content: "",
       coverImage: "/images/hero-outreach.jpg",

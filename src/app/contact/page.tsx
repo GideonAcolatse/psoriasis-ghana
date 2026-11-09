@@ -78,9 +78,9 @@ export default function ContactPage() {
             <div className="flex items-start gap-3.5">
               <Phone className="w-5 h-5 text-brand-terracotta flex-shrink-0 mt-0.5" />
               <div>
-                <p className="font-bold text-white">Telephone Helplines</p>
-                <p className="text-xs text-emerald-200 mt-0.5">+233 (0)24 517 9569</p>
-                <p className="text-xs text-emerald-200">+233 (0)24 691 4992</p>
+                <p className="font-bold text-white">Telephone & WhatsApp Lines</p>
+                <p className="text-xs text-emerald-200 mt-0.5">+233 (0)24 517 9569 (WhatsApp)</p>
+                <p className="text-xs text-emerald-200">+233 (0)59 288 4233 (WhatsApp)</p>
               </div>
             </div>
 
@@ -88,8 +88,8 @@ export default function ContactPage() {
               <Mail className="w-5 h-5 text-brand-terracotta flex-shrink-0 mt-0.5" />
               <div>
                 <p className="font-bold text-white">Official Email</p>
-                <p className="text-xs text-emerald-200 mt-0.5">info@psoriasisgh.org</p>
-                <p className="text-xs text-emerald-200">psoriasis.gh@gmail.com</p>
+                <p className="text-xs text-emerald-200 mt-0.5">psoriasisghana@gmail.com</p>
+                <p className="text-xs text-emerald-200">info@psoriasisgh.org</p>
               </div>
             </div>
 
@@ -107,17 +107,31 @@ export default function ContactPage() {
             </div>
           </div>
 
-          {/* Instant WhatsApp Action */}
-          <div className="pt-4 border-t border-emerald-800">
-            <a
-              href="https://wa.me/233245179569?text=Hello%20PAG,%20I%20would%20like%20to%20get%20in%20touch"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="touch-press w-full py-3.5 rounded-2xl bg-white text-brand-emerald font-bold text-xs flex items-center justify-center gap-2 hover:bg-emerald-50 transition-all shadow-sm"
-            >
-              <MessageCircle className="w-4 h-4 text-emerald-700" />
-              <span>Message Us on WhatsApp Now</span>
-            </a>
+          {/* Instant WhatsApp Actions */}
+          <div className="pt-4 border-t border-emerald-800 space-y-2">
+            <span className="text-[11px] font-bold uppercase tracking-wider text-amber-300 block">
+              Instant WhatsApp Support
+            </span>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+              <a
+                href="https://wa.me/233245179569?text=Hello%20PAG,%20I%20am%20seeking%20patient%20guidance"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="touch-press py-3 px-3 rounded-xl bg-white text-brand-emerald font-bold text-xs flex items-center justify-center gap-2 hover:bg-emerald-50 transition-all shadow-sm"
+              >
+                <MessageCircle className="w-4 h-4 text-emerald-700 flex-shrink-0" />
+                <span>WhatsApp Line 1</span>
+              </a>
+              <a
+                href="https://wa.me/233592884233?text=Hello%20PAG,%20I%20am%20seeking%20patient%20guidance"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="touch-press py-3 px-3 rounded-xl bg-white text-brand-emerald font-bold text-xs flex items-center justify-center gap-2 hover:bg-emerald-50 transition-all shadow-sm"
+              >
+                <MessageCircle className="w-4 h-4 text-emerald-700 flex-shrink-0" />
+                <span>WhatsApp Line 2</span>
+              </a>
+            </div>
           </div>
         </div>
 

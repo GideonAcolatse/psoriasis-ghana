@@ -23,7 +23,7 @@ export const initialMetrics: LiveMetric[] = [
     key: "year_founded",
     label: "Serving Since",
     value: "June 2019",
-    subtext: "Founded by Miss Ruth Adjoa Abeka",
+    subtext: "Founded by Miss Ruth Adjowa Abekah",
   },
 ];
 
@@ -35,7 +35,7 @@ export const initialPosts: Post[] = [
     excerpt: "How the Psoriasis Association of Ghana transformed from a grassroots voice in Tema into a nationally recognized NGO affiliated with IFPA and GlobalSkin.",
     content: "When we founded the Psoriasis Association of Ghana (PAG) in June 2019, individuals living with psoriasis across our communities suffered in silence. The condition was deeply misunderstood, often mislabelled as contagious or a spiritual affliction. Today, through persistent medical outreaches, policy advocacy, and community education, we are demonstrating that people living with psoriasis deserve dignity, world-class healthcare, and unconditional community support.",
     category: "Advocacy",
-    author: "Miss Ruth Adjoa Abeka",
+    author: "Miss Ruth Adjowa Abekah",
     coverImage: "/images/hero-outreach.jpg",
     publishedAt: "2024-11-01",
     status: "published",
@@ -48,7 +48,7 @@ export const initialPosts: Post[] = [
     excerpt: "Essential topical therapies and systemic biologics for psoriasis remain out-of-pocket in Ghana. PAG advocates for urgent NHIS formulary inclusion.",
     content: "For a working-class family in Ghana, spending between GHS 1,500 and GHS 2,500 every single month on maintenance ointments, corticosteroids, and specialized consultations is financially catastrophic. Psoriasis is a chronic autoimmune condition, not a cosmetic choice. Our ongoing policy dialogue with the Ministry of Health and the National Health Insurance Authority seeks to ensure that no Ghanaian is forced to choose between groceries and managing their skin.",
     category: "Advocacy",
-    author: "Miss Ruth Adjoa Abeka",
+    author: "Miss Ruth Adjowa Abekah",
     coverImage: "/images/gallery/screening-consultation.jpg",
     publishedAt: "2024-10-15",
     status: "published",

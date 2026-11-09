@@ -185,7 +185,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
               </div>
               <div className="overflow-hidden">
                 <p className="text-xs font-bold text-brand-charcoal truncate leading-tight">
-                  Ruth Adjoa Abeka
+                  Ruth Adjowa Abekah
                 </p>
                 <div className="flex items-center gap-1 mt-0.5">
                   <ShieldCheck className="w-3 h-3 text-emerald-600" />
